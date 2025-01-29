@@ -47,7 +47,7 @@
                                        // hint: 8bit is less critical for STT services than a low 8kHz sample rate
                                        // for fastest STT: combine 8kHz and 8 bit. 
 
-#define GAIN_BOOSTER_I2S        45     // original I2S streams is VERY silent, so we added an optional GAIN booster for INMP441
+#define GAIN_BOOSTER_I2S        10     // original I2S streams is VERY silent, so we added an optional GAIN booster for INMP441
                                        // multiplier, values: 1-64 (32 seems best value for INMP441)
                                        // 64: high background noise but working well for STT on quiet human conversations
 
