@@ -231,7 +231,7 @@ here:
         text = "";
 
         if (client.connect("generativelanguage.googleapis.com", 443)) {
-          String url = "/v1beta/models/gemini-1.5-flash:generateContent?key=" + String(gemini_KEY);
+          String url = "/v1beta/models/gemini-2.5-flash:generateContent?key=" + String(gemini_KEY);
 
           String payload = String("{\"contents\": [{\"parts\":[{\"text\":\"" + transcription + "\"}]}],\"generationConfig\": {\"maxOutputTokens\": " + OpenAI_Max_Tokens + "}}");
 
